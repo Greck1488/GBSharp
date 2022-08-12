@@ -8,5 +8,5 @@ int num = Convert.ToInt32(Console.ReadLine());
 if (num < 100 || num > 999) { Console.WriteLine("Читать умеем? Надо ТРЁХЗНАЧНОЕ!"); Environment.Exit(0); }
 
 int secondDigit = (num / 10) % 10;
-Console.WriteLine("Вторая цифра");
+Console.WriteLine("Вторая цифра:");
 Console.WriteLine(secondDigit);
