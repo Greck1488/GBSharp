@@ -21,4 +21,9 @@ arr[i] = rand.Next(100,999);
     }
     Console.ResetColor();
 }
+Console.WriteLine("Массив имеет вид:");
+Console.ForegroundColor = ConsoleColor.DarkYellow; 
+Console.WriteLine($"[{String.Join("; ", arr)}]");
+Console.ForegroundColor = ConsoleColor.DarkGreen; 
 Console.WriteLine($"Количество чётных чисел в массиве {SumIndex}");
+Console.ResetColor();
