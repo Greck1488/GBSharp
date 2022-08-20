@@ -3,6 +3,7 @@
 
 Console.WriteLine("Cколько в массиве должно быть чисел?");
 int Count = Convert.ToInt32(Console.ReadLine());
+int SumIndex = 0;
 int[] arr = new int[Count];
 Random rand = new Random();
 for(int i =0;i<arr.Length;i++)
@@ -12,6 +13,7 @@ arr[i] = rand.Next(100,999);
     {
         Console.ForegroundColor = ConsoleColor.Green; 
         Console.WriteLine(arr[i]);
+        SumIndex += 1;
     } 
     else
     {
@@ -19,3 +21,4 @@ arr[i] = rand.Next(100,999);
     }
     Console.ResetColor();
 }
+Console.WriteLine($"Количество чётных чисел в массиве {SumIndex}");
