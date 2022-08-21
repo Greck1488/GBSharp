@@ -5,7 +5,6 @@ Console.Write("Какое число элементов нужно в масси
 int num = Convert.ToInt32(Console.ReadLine());
 double[] numbers = new double[num];
 double result = 0;
-
 for (int i = 0; i < numbers.Length; i++)
 {
     Random rnd = new Random();
@@ -14,6 +13,7 @@ for (int i = 0; i < numbers.Length; i++)
     Console.Write(numbers[i] + "\t");
     Console.ResetColor();
 }
+
 result = numbers.Max() - numbers.Min();
 Console.ForegroundColor = ConsoleColor.DarkGreen;
 Console.WriteLine($"\nРазница между максимальным числом массива и минимальным: {result}");
