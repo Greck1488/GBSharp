@@ -14,7 +14,6 @@ for (int i = 0; i < numbers.Length; i++)
     Console.Write(numbers[i] + "\t");
     Console.ResetColor();
 }
-
 result = numbers.Max() - numbers.Min();
 Console.ForegroundColor = ConsoleColor.DarkGreen;
 Console.WriteLine($"\nРазница между максимальным числом массива и минимальным: {result}");
